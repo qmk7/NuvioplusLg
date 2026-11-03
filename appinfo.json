@@ -1,0 +1,11 @@
+{
+  "id": "com.qmk7.nuviopluslg",
+  "version": "1.0.0",
+  "vendor": "QMK7",
+  "type": "web",
+  "main": "index.html",
+  "title": "Nuvio Plus LG",
+  "appDescription": "IPTV application for LG webOS",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png"
+}
