@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuvio Plus LG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Nuvio Plus</h1>
+    <p>Entertainment for your LG TV</p>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>Select your content source to get started.</p>
+      <button onclick="showSection('playlists')">Playlists</button>
+      <button onclick="showSection('addons')">Add-ons</button>
+      <button onclick="showSection('youtube')">YouTube</button>
+    </section>
+
+    <section id="playlists" hidden>
+      <h2>Playlists</h2>
+      <input id="playlistUrl" placeholder="Enter M3U URL">
+      <button onclick="addPlaylist()">Add playlist</button>
+      <ul id="playlistList"></ul>
+      <button onclick="showSection('home')">Back</button>
+    </section>
+
+    <section id="addons" hidden>
+      <h2>Add-ons</h2>
+      <p>Add-on support is under development.</p>
+      <button onclick="showSection('home')">Back</button>
+    </section>
+
+    <section id="youtube" hidden>
+      <h2>YouTube</h2>
+      <button onclick="openYouTube()">Open YouTube</button>
+      <button onclick="showSection('home')">Back</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
